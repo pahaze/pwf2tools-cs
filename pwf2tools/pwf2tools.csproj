@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81850145-5579-4748-8DA5-6A9DFE00281C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pwf2tools</RootNamespace>
+    <AssemblyName>pwf2tools</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>paraprparpar_zcf_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DiscordRPC, Version=1.0.150.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DiscordRichPresence.1.0.150\lib\net35\DiscordRPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\TransparentPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImgLib\Common\BinaryReaderExtensions.cs" />
+    <Compile Include="ImgLib\Common\Endianness.cs" />
+    <Compile Include="ImgLib\Common\GenericDictionary.cs" />
+    <Compile Include="ImgLib\Common\ImageExtensions.cs" />
+    <Compile Include="ImgLib\Common\ImageUtils.cs" />
+    <Compile Include="ImgLib\Common\InteropUtils.cs" />
+    <Compile Include="ImgLib\Encoding\ColorCodec.cs" />
+    <Compile Include="ImgLib\Encoding\ColorCodecEndiannessDependent.cs" />
+    <Compile Include="ImgLib\Encoding\ColorComparers\ARGBColorComparer.cs" />
+    <Compile Include="ImgLib\Encoding\ImageDecoder.cs" />
+    <Compile Include="ImgLib\Encoding\ImageDecoderDirectColor.cs" />
+    <Compile Include="ImgLib\Encoding\ImageDecoderIndexed.cs" />
+    <Compile Include="ImgLib\Encoding\ImageEncoder.cs" />
+    <Compile Include="ImgLib\Encoding\ImageEncoderDirectColor.cs" />
+    <Compile Include="ImgLib\Encoding\ImageEncoderIndexed.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodec16BitLEABGR.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodec24BitRGB.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodec32BitABGR.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodec32BitARGB.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodec32BitBGRA.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodec32BitRGBA.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodecDXT1.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodecDXT1Gamecube.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodecI4.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodecI8.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodecIA4.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodecIA8.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodecRGB565.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\ColorCodecRGB5A3.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\IndexCodec4Bpp.cs" />
+    <Compile Include="ImgLib\Encoding\Implementation\IndexCodec8Bpp.cs" />
+    <Compile Include="ImgLib\Encoding\IndexCodec.cs" />
+    <Compile Include="ImgLib\Encoding\IndexCodecEndiannessDependent.cs" />
+    <Compile Include="ImgLib\Filters\Filter.cs" />
+    <Compile Include="ImgLib\Filters\FilterComposer.cs" />
+    <Compile Include="ImgLib\Filters\GamecubePlanarFilter.cs" />
+    <Compile Include="ImgLib\Filters\SwizzleFilter.cs" />
+    <Compile Include="ImgLib\Filters\TileFilter.cs" />
+    <Compile Include="ImgLib\Filters\TIM2PaletteFilter.cs" />
+    <Compile Include="ImgLib\Formats\DummyTexture.cs" />
+    <Compile Include="ImgLib\Formats\GenericTextureFormat.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\NamcoTexture.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\NamcoTexture.Serializer.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\NUTTexture.Serializer.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\PE3DATTexture.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\PE3DATTexture.Serializer.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\PE3SimpleDATTexture.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\PE3SimpleDATTexture.Serializer.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\TacticsOgreEFXTexture.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\TacticsOgreEFXTexture.Serializer.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\TIM2Texture.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\TIM2Texture.Segment.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\TIM2Texture.Serializer.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\TX48Texture.cs" />
+    <Compile Include="ImgLib\Formats\Implementation\TX48Texture.Serializer.cs" />
+    <Compile Include="ImgLib\Formats\PalettedTextureFormat.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\Exceptions\MetadataException.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\Metadata\MetadataReader.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\Metadata\MetadataReaderBase.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\Metadata\MetadataWriter.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\Metadata\MetadataWriterBase.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\Metadata\XmlMetadataReader.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\Metadata\XmlMetadataWriter.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\SimpleTextureFormatSerializer.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\TextureFormatSerializer.cs" />
+    <Compile Include="ImgLib\Formats\Serialization\TextureFormatSerializerProvider.cs" />
+    <Compile Include="ImgLib\Formats\TextureContainer.cs" />
+    <Compile Include="ImgLib\Formats\TextureFormat.cs" />
+    <Compile Include="ImgLib\Formats\TextureFormatBase.cs" />
+    <Compile Include="Model\ListViewItemComparer.cs" />
+    <Compile Include="Model\NamcoTexturePropertyGridObject.cs" />
+    <Compile Include="Model\PE3DATPropertyGridObject.cs" />
+    <Compile Include="Model\PropertyGridObjectFactory.cs" />
+    <Compile Include="Model\RangedTypeConverter.cs" />
+    <Compile Include="Model\TextureFormatProxy.cs" />
+    <Compile Include="Model\TexturePropertyGridObject.cs" />
+    <Compile Include="Model\TIM2PropertyGridObject.cs" />
+    <Compile Include="nQuant\Box.cs" />
+    <Compile Include="nQuant\ColorData.cs" />
+    <Compile Include="nQuant\CubeCut.cs" />
+    <Compile Include="nQuant\IWuQuantizer.cs" />
+    <Compile Include="nQuant\Lookup.cs" />
+    <Compile Include="nQuant\LookupData.cs" />
+    <Compile Include="nQuant\Pixel.cs" />
+    <Compile Include="nQuant\QuantizationException.cs" />
+    <Compile Include="nQuant\QuantizedPalette.cs" />
+    <Compile Include="nQuant\WuQuantizer.cs" />
+    <Compile Include="nQuant\WuQuantizerBase.cs" />
+    <Compile Include="pwf2spm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwf2spm.Designer.cs">
+      <DependentUpon>pwf2spm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pwf2hat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwf2hat.designer.cs">
+      <DependentUpon>pwf2hat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pwf2hat.Impl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwf2hat.MenuEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwf2tex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwf2tex.Designer.cs">
+      <DependentUpon>pwf2tex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FolderSelectDialog.cs" />
+    <Compile Include="pwf2about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwf2about.Designer.cs">
+      <DependentUpon>pwf2about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pwf2int.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwf2int.Designer.cs">
+      <DependentUpon>pwf2int.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pwf2settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwf2settings.Designer.cs">
+      <DependentUpon>pwf2settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pwf2tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwf2tools.Designer.cs">
+      <DependentUpon>pwf2tools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Reflector.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="pwf2about.resx">
+      <DependentUpon>pwf2about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwf2int.resx">
+      <DependentUpon>pwf2int.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwf2settings.resx">
+      <DependentUpon>pwf2settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwf2spm.resx">
+      <DependentUpon>pwf2spm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwf2tex.resx">
+      <DependentUpon>pwf2tex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwf2tools.resx">
+      <DependentUpon>pwf2tools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwf2hat.resx">
+      <DependentUpon>pwf2hat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="nice_aO5_icon.ico" />
+    <Content Include="paraprparpar_zcf_icon.ico" />
+    <None Include="Resources\43ac58c778b77624fc53187dd1b876ee.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
