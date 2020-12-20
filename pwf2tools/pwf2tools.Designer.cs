@@ -87,9 +87,9 @@
             this.buildtxt.AutoSize = true;
             this.buildtxt.Location = new System.Drawing.Point(12, 100);
             this.buildtxt.Name = "buildtxt";
-            this.buildtxt.Size = new System.Drawing.Size(231, 13);
+            this.buildtxt.Size = new System.Drawing.Size(237, 13);
             this.buildtxt.TabIndex = 5;
-            this.buildtxt.Text = "This build was created on December 8th, 2020.";
+            this.buildtxt.Text = "This build was created on December 19th, 2020.";
             // 
             // abt
             // 

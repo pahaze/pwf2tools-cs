@@ -20,7 +20,6 @@ C:\Users\pahaze\Desktop\jumk\stuff\stuff (2)\pwf2tools\obj\Release\pwf2tools.csp
 C:\Users\pahaze\Desktop\jumk\stuff\stuff (2)\pwf2tools\obj\Release\pwf2tools.csproj.CopyComplete
 C:\Users\pahaze\Desktop\jumk\stuff\stuff (2)\pwf2tools\obj\Release\pwf2tools.exe
 C:\Users\pahaze\Desktop\jumk\stuff\stuff (2)\pwf2tools\obj\Release\pwf2tools.pdb
-C:\Users\pahaze\Desktop\pwf2tools-versions\source\pwf2tools\obj\Release\pwf2tools.csprojAssemblyReference.cache
 C:\Users\pahaze\Desktop\pwf2tools-versions\source\pwf2tools\obj\Release\pwf2tools.Properties.Resources.resources
 C:\Users\pahaze\Desktop\pwf2tools-versions\source\pwf2tools\obj\Release\pwf2tools.pwf2about.resources
 C:\Users\pahaze\Desktop\pwf2tools-versions\source\pwf2tools\obj\Release\pwf2tools.pwf2int.resources
@@ -42,3 +41,4 @@ C:\Users\pahaze\Desktop\pwf2tools-versions\source\pwf2tools\bin\Release\DiscordR
 C:\Users\pahaze\Desktop\pwf2tools-versions\source\pwf2tools\bin\Release\DiscordRPC.xml
 C:\Users\pahaze\Desktop\pwf2tools-versions\source\pwf2tools\bin\Release\Newtonsoft.Json.xml
 C:\Users\pahaze\Desktop\pwf2tools-versions\source\pwf2tools\obj\Release\pwf2tools.csproj.CopyComplete
+C:\Users\pahaze\Desktop\pwf2tools-versions\source\pwf2tools\obj\Release\pwf2tools.csprojAssemblyReference.cache

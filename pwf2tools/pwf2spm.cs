@@ -36,7 +36,6 @@ namespace pwf2tools
             {
                 Title = "Export your SPM file.",
 
-                CheckFileExists = true,
                 CheckPathExists = true,
 
                 DefaultExt = "spm",
