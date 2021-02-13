@@ -28,7 +28,7 @@ namespace pwf2tools
             };
             saveINT = new SaveFileDialog
             {
-                Title = "Find your INT file.",
+                Title = "Save your INT file.",
 
                 CheckPathExists = true,
 

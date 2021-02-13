@@ -34,12 +34,12 @@ namespace pwf2tools
             };
             saveSPMdiag = new SaveFileDialog
             {
-                Title = "Export your SPM file.",
+                Title = "Export your tex0 file.",
 
                 CheckPathExists = true,
 
-                DefaultExt = "spm",
-                Filter = "SPM files (*.spm)|*.spm",
+                DefaultExt = "tex0",
+                Filter = "tex0 files (*.tex0)|*.tex0",
                 FilterIndex = 2,
                 RestoreDirectory = true,
             };
